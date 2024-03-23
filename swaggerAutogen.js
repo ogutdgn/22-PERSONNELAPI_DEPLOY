@@ -5,10 +5,6 @@
 require('dotenv').config()
 const HOST = process.env?.HOST || "https://22-personnelapi-deploy.vercel.app/"
 
-const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
-
-swaggerUI.setup(specs, { customCssUrl: CSS_URL })
-
 
 // const PORT = process.env?.PORT || 8000
 /* ------------------------------------------------------- */
