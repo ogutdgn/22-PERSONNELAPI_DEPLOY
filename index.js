@@ -71,7 +71,7 @@ app.use('/documents/json', (req, res) => {
 //? SWAGGER:
 const swaggerUi = require("swagger-ui-express");
 const swaggerJson = require("./swagger.json");
-const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.6.2/swagger-ui.js";
+const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.6.2/swagger-ui.min.css";
 // const swaggerJsDoc = require("swagger-jsdoc")
 // const specs = swaggerJsDoc(options);
 app.use('/documents/swagger', swaggerUi.serve, swaggerUi.setup(swaggerJson, { customCssUrl: CSS_URL }, { swaggerOptions: { persistAuthorization: true } }));
