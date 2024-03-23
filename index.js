@@ -135,7 +135,7 @@ app.all('/', (req, res) => {
         message: 'Welcome to PERSONNEL API',
         api: {
             documents: {
-                swagger: 'http://127.0.0.1:8000/documents/swagger',
+                swagger: 'https://22-personnelapi-deploy.vercel.app/documents/swagger',
                 redoc: 'http://127.0.0.1:8000/documents/redoc',
                 json: 'http://127.0.0.1:8000/documents/json',
             },
