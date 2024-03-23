@@ -4,7 +4,7 @@
 ------------------------------------------------------- */
 require('dotenv').config()
 const HOST = process.env?.HOST || "https://22-personnelapi-deploy.vercel.app/"
-const PORT = process.env?.PORT || 8000
+// const PORT = process.env?.PORT || 8000
 /* ------------------------------------------------------- */
 // npm i swagger-autogen
 // https://swagger-autogen.github.io/docs/
@@ -41,7 +41,7 @@ const document = {
 		contact: { name: packageJson.author, email: "qadir@clarusway.com" },
 		license: { name: packageJson.license, },
 	},
-	host: `${HOST}:${PORT}`,
+	host: `${HOST}`,
 	basePath: '/',
 	schemes: ['http', 'https'],
 	// JWT Settings:
